@@ -1,0 +1,16 @@
+#azon {
+    padding: 5px;
+    position: absolute;
+    left: 15%;
+}
+#gomb {
+    padding: 5px;
+    position: absolute;
+    left: 45%;
+    width: 150px;
+}
+#formazas {
+    border: solid 1px;
+    background-color: gray; 
+    padding: 30px;
+}

@@ -1,0 +1,22 @@
+
+<!--TODO: fxlayout, 3x3-as, csak képek, 7 dialogablak hogy rossz, 1 még 1 csapda 1 vissza-->
+<!--TODO: ha akarok pulseit class lehet rátenni-->
+
+<div fxLayout="column" fxLayoutAlign="center center" style="background-color: cornflowerblue;">
+    <h1>Sajnálom, innen csak 1 elem vezet vissza az előző oldalra</h1>
+    <p>
+        <button style="margin: 30px;" mat-raised-button color="primary" class="flashit" (click)="openDialog()">Kattints rám</button>
+        <a style="margin: 30px;" routerLink="/csapda" class="pulseit">link</a>
+        <a style="margin: 30px;" href="https://www.facebook.com/">Kattints ide ha már unatkozol</a>    
+    </p>
+    <p>
+        <a style="margin: 30px;" routerLink="/csapda" class="pulseit" id="elhitted" >csak óvatosan!</a>
+        <a style="margin-left: 120px;margin-right: 120px;" routerLink="" id="elhitted">adpasc</a>
+        <button style="margin: 30px;" mat-raised-button color="primary" (click)="openDialog()">Mondok valamit</button>
+    </p>
+    <p>
+        <button style="margin: 30px;" mat-raised-button color="primary" class="flashit" (click)="openDialog()">Kattints rám</button>
+        <a (click)="openDialog()" class="pulseit" style="cursor: pointer;margin-left: 100px;margin-right: 100px;">menjünk vissza</a>
+        <button style="margin: 30px;" mat-raised-button color="primary" class="flashit" (click)="openDialog()">Gomb</button>
+    </p>
+</div>

@@ -1,0 +1,85 @@
+
+<div style="padding: 30px;background-color: rgb(38, 150, 28);">
+    <div style="padding: 10px;">
+        <button mat-raised-button color="primary" (click)="openDialog()" class="flashit">
+            Kattints rám        
+        </button>
+        <p>
+            <img src="/assets/img/what.gif" routerLink="/hibas cim" style="cursor: pointer;">
+        </p>
+        <p>
+            <a class="reverse" routerLink="/csapda2">
+             Ha ide kattintasz, lehet hogy nyersz!
+            </a>
+    
+        </p>
+        <p>
+            <a href="https://promo.casinoroom.com/casino-hu/?c1=250-237-5459-HUN&c2=412411053988&c3=online%20kaszin%C3%B3&c4=kwd-333283654040&c5=Cj0KCQjwyur0BRDcARIsAEt86IAC6QaQHYpoMYc5foupPzsyehk8xqXYIsuR2emwEg2hEpKTDcJDRqcaArkaEALw_wcB&gclid=Cj0KCQjwyur0BRDcARIsAEt86IAC6QaQHYpoMYc5foupPzsyehk8xqXYIsuR2emwEg2hEpKTDcJDRqcaArkaEALw_wcB">
+                Közelebb juthatsz a megoldáshoz!
+            </a>
+        </p>
+        <button mat-raised-button color="primary" routerLink="/felvonas1">
+            Menjünk tovább
+        </button>
+    </div>
+    
+    <div *ngIf="isShow" class="asdgomb">
+        <div *ngIf="isShow3" class="asdgomb2">
+            <img src="/assets/img/oof.gif" routerLink='/csapda' style="cursor: pointer;">
+            <button mat-raised-button color="primary" class="flashit" (click)="openDialog()" style="top: 230px;left: 7px;">
+                gomb
+            </button>
+        </div>
+        <div *ngIf="isShow4" class="asdgomb3" style="cursor: pointer;" routerLink="/csapda">
+            <span class="flashit">
+                encSaKeGYlInKVagYoK
+            </span>
+        </div>
+        <ul>
+            <li style="padding: 10px;">
+                <button mat-raised-button color="primary" routerLink="/felvonas2">
+                    Gomb
+                </button>
+            </li>
+            <li  style="padding: 10px;">
+                <button mat-raised-button color="primary" (click)="toggleDisplay4()">
+                    Gomb
+                </button>
+            </li>
+            <li style="padding: 10px;">
+                <img src="/assets/img/kekw.png" class="pulseit" (click)="ujProba()" style="cursor: pointer;">
+            </li>
+        </ul>
+    </div>
+    <button mat-raised-button color="primary" (click)="openDialog()" style="left: 10px;" >
+            Ez is egy gomb
+    </button>
+            
+        
+    <p routerLink='/felvonas1' style="padding:10px;left: 10px;">
+        {{jelenlegiLehetoseg}}
+    </p>
+    <div>
+        <button mat-raised-button color="primary" (click)="toggleDisplay()" style="left: 10px;">
+            Újra próbálom
+        </button>
+    </div>
+    <div *ngIf="isShow2"  style="padding: 10px;left: 10px;">
+        A három közül az egyik jó, rajtad múlik
+        <button mat-raised-button color="primary" routerLink="/csapda">
+            gyerünk
+        </button>
+        <button mat-raised-button color="primary" (click)="toggleDisplay3()">
+            már
+        </button>
+        <button mat-raised-button color="primary" routerLink="/felvonas3">
+            tovább
+    
+        </button>
+    </div>
+    <div *ngIf="randomMath() < 0.4"(click)="toggleDisplay2()"  id="helyes">
+        Következő szint
+    </div>
+    </div>
+    
+    

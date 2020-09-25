@@ -1,0 +1,37 @@
+<div style="background-color: cornflowerblue;padding: 250px;">
+    <h2>
+        Elérkeztél az <span (click)="openNyertesDialog()"> utolsó</span> szintre, már közel a cél!
+    </h2>
+    <div>
+        <div>
+            <p id="kerdes">Ha a kezdőoldalon az egeret a macskához vitted milyen szöveg jelent meg?</p>
+            <input matInput type='text' placeholder='válasz' [(ngModel)]='hack2' id="valasz">
+            <p id="keres">Ha nem tudod a választ kattints <a routerLink="">ide</a> </p>
+        </div>
+    </div>
+    <ul *ngIf="hack2 === 'azenmacskam'" class="rendezes">
+        <li>
+            <a routerLink="/csapda3">elso</a>
+        </li>
+        <li style="margin-bottom: 30px;margin-top: 30px;">
+            <a (click)="toggleDisplay()">masodik</a>
+
+        </li>
+        <li>
+            <a routerLink="/csapda2">harmadik</a>
+
+        </li>
+    </ul>
+    <div *ngIf="isShow" class="kep">
+        <img src="/assets/img/asd.png" (click)="toggleDisplay2()" width="200" height="200">
+    </div>
+    <div *ngIf="isShow2">
+        <p class="lehetosegek"><img src="/assets/img/kekw.png" width="200" height="200" routerLink="/csapda3"></p>
+        <p class="lehetosegek2"><button mat-raised-button color="primary" routerLink="/felvonas1">Meglepi</button></p>
+        <p class="lehetosegek3"><img src="/assets/img/oof.gif" width="200" height="200" (click)="openDialog()"></p>
+        <p class="lehetosegek4"><button mat-raised-button color="primary" routerLink="/csapda2">Ez is</button></p>
+
+    </div>
+</div>
+<!--TODO:, reklámok oldalra 3-4-re,css effektetk hozzáadása
+villogo gomb, pulseit, tovabbdialogot hozzáimportalgatni ahova kell-->

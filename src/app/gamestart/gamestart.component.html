@@ -1,0 +1,34 @@
+<body style="background-color: greenyellow;">
+    <div fxLayout="column" fxLayoutAlign="center center" class="signup-form" id="formazas" >
+      <h2>
+       No Adblock Please
+      </h2>
+      <div>
+       <h3>Üdv látogató!</h3>
+       <div style="padding-bottom: 10px;"> a játékban a te feladatot, hogy megtaláld a megfelelő elemet az ablakban, ám
+        ez nem olyan egyszerű, mint amilyennek tűnik, ugyanis ha rossz elemre tippeltél, akkor
+        könnyen találhatod magad egy másik oldalon, másik felületen, ahonnan visszakerülni az
+        eredeti oldalra nem a legegyszerűbb feladat. Ha úgy érzed, hogy nincs elég idegrendszered
+        a játékhoz, akkor még most távozz az oldalról. A játék kezdete előtt még van lehetőséged
+        me gtippelni a macskám nevét, és ha sikerül eltalálnod automatikusan nyertél.
+        Sok sikert!
+        </div>
+        <img src="/assets/img/mycat.jpg" title="azenmacskam" width="200" height="300">
+      
+      </div>
+      <input matInput type='text' placeholder='szoveg' [(ngModel)]='hack'id="azon">
+      <button mat-raised-button color="primary" routerLink='/felvonas1' id="gomb">
+        Get started
+      </button>
+  
+  
+  
+      <h2 *ngIf="hack === 'gombi'">
+        <span (click)="openNyertesDialog()">Sikerült eltalálnod, kattints ide</span>
+      </h2>
+  
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </body>

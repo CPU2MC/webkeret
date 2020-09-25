@@ -1,0 +1,56 @@
+
+<!--TODO: fxlayout, 3x3-as, csak képek, 7 dialogablak hogy rossz, 1 még 1 csapda 1 vissza-->
+<div style="background-color: cornflowerblue;" >
+    
+    <div>
+        <p *ngIf="isShow" class="asdgomb">
+            <img src="assets/img/kekw.png" (click)="toggleDisplay2()" style="cursor: pointer;width: 130px;height: 140px;">    
+        </p>
+        <p *ngIf="isShow" class="asdgomb4">
+            <img src="/assets/img/asd.png" routerLink="/felvonas1" style="cursor: pointer;width: 130px;height: 140px;">
+        </p>
+        <button mat-raised-button color="primary" (click)="toggleDisplay()" style="left:850px;margin-top: 50px;">
+            tovább
+    
+        </button>
+    </div>
+    <div>
+        <p *ngIf="isShow2" class="asdgomb2">
+            <a href="javascript:alert('Már közel jársz!');">van egy üzenetem a számodra</a>
+        </p>
+        <p *ngIf="isShow2" class="asdgomb3">
+            <a href="https://king.com/game/candycrush">inkább mással játszok</a>
+        </p>
+        <button mat-raised-button color="primary" routerLink="/csapda2" style="left:720px;margin:130px;">
+            tovább
+    
+        </button>
+        
+    </div>
+    <div>
+        <p *ngIf="isShow3" class="asdgomb5">
+            <img src="/assets/img/oof.gif" (click)="openDialog()" style="cursor: pointer;width: 150px;height: 130px;">
+        </p>
+        <p *ngIf="isShow3" class="asdgomb6">
+            <img src="/assets/img/what.gif" (click)="toggleDisplay4()" style="cursor: pointer;width: 150px;height: 130px;">
+        </p>
+        <button mat-raised-button color="primary" (click)="toggleDisplay3()" style="left:850px;margin-bottom: 40px;">
+            tovább
+    
+
+        </button>
+    </div>
+    <div *ngIf="isShow4" class="megoldas">
+        <span  class="flashit"  (click)="openDialog()"> Ha</span>
+        <span  class="flashit"  (click)="openDialog()"> mázlid</span>
+        <span  class="flashit"  routerLink=""> van</span> 
+        <span  class="flashit"  (click)="openDialog()"> tovább</span>
+        <span  class="flashit"  routerLink="/felvonas4">mehetsz</span>
+        <span  class="flashit"  (click)="openDialog()"> az</span>
+        <span  class="flashit"  (click)="openDialog()"> utolsó</span>
+        <span  class="flashit"  routerLink="/felvonas1"> szintre,</span>
+        <span  class="flashit"  routerLink="/csapda1"> kattints</span>
+        <span  class="flashit"  (click)="openDialog()"> valamelyik</span>
+        <span  class="flashit"  routerLink="/csapda3"> szóra</span>
+    </div>
+</div>

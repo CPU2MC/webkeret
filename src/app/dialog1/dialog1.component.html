@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>Nem nyertél :(</h2>
+
+<mat-dialog-content>
+    <p>Nem jártál sikerrel, próbálj egy másikra menni</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-cancel (click)="close()">Vissza</button>
+    <button mat-button  routerLink="/csapda" (click)="close()" >Tovább</button>
+</mat-dialog-actions>

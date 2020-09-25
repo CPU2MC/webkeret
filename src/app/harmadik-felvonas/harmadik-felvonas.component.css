@@ -1,0 +1,94 @@
+body{     
+    margin : 0;
+    padding : 0;
+    font-family : arial, sans-serif;
+    background-color : #15242d;
+    height: 100%;height:auto;
+    min-width: 100%;width:auto;
+    font-size: 15px;
+    text-align:center;
+    color:#fff;
+}
+/* Flash class and keyframe animation */
+.flashit{
+  color: black;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+/* Pulse class and keyframe animation */
+.pulseit{
+	-webkit-animation: pulse linear .9s infinite;
+	animation: pulse linear .9s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:200px; } 
+	50% { width:340px; } 
+	100% { width:200px; }
+}
+@keyframes pulse {
+	0% { width:200px; } 
+	50% { width:340px; } 
+	100% { width:200px; }
+}
+
+.asdgomb {
+    position: absolute;
+    left: 500px;
+    top: 30px;
+
+}
+.asdgomb2 {
+    position: absolute;
+    left: 450px;
+    top: 220px;
+
+}
+.asdgomb3 {
+    position: absolute;
+    left: 1150px;
+    top: 220px;
+
+}
+.asdgomb4 {
+    position: absolute;
+    left: 1150px;
+    top: 30px;
+
+}
+.asdgomb5 {
+    position: absolute;
+    left: 500px;
+    top: 300px;
+
+}
+.asdgomb6 {
+    position: absolute;
+    left: 1150px;
+    top: 300px;
+
+}
+.megoldas {
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#helyes {
+    padding: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+#elhitted:hover {
+    display: none;
+}
